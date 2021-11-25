@@ -140,7 +140,7 @@ function initComponent() {
         parcels: [],
         selectedParcelId: -1,
         visibleParcelIds: [], //updated from map!
-        selectedProduct: "ndre1", //default preselected product
+        selectedProduct: "maturity", //default preselected product
         maturityData: [],
         dataSource: "sentinel2",
         queryDate: "",
@@ -465,6 +465,7 @@ function initComponent() {
           document.getElementById("navbarDataValidation").innerHTML = i18n.t("indexLocales.navbar.validation");
           document.getElementById("navbarPortfolio").innerHTML = i18n.t("indexLocales.navbar.portfolio");
           document.getElementById("navbarZones").innerHTML = i18n.t("indexLocales.navbar.zones");
+          document.getElementById("navbarAnalyst").innerHTML = i18n.t("indexLocales.navbar.analyst");
           document.getElementById("allRightsReserved").innerHTML = i18n.t("indexLocales.footer.allRightsReserved");
           document.getElementById("tabSplitView").innerHTML = i18n.t("indexLocales.headings.splitview");
           document.getElementById("tabGraph").innerHTML = i18n.t("indexLocales.headings.graph");
