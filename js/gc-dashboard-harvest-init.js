@@ -158,7 +158,7 @@ function initComponent() {
         analyticsActive: true,
         messagesActive: true,
         timesliderActive: true,
-        containerSplitSize: [45,55],
+        containerSplitSize: [42,58],
         leftColumnShow: true,
         rightColumnShow: true,
         split: null,
@@ -212,7 +212,7 @@ function initComponent() {
         this.$on('getMaturityTimeseries', this.getMaturityTimeseries);
         this.$on('maturitydataChange', this.maturitydataChange);
 
-        this.containerSplitSize = [45,55];
+        this.containerSplitSize = [42,58];
 
         // trigger apply filter
         for (var i=0; i < this.$children.length; i++ ) {

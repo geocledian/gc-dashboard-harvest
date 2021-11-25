@@ -16,7 +16,7 @@
       font-size: 0.9rem;
     }
     .gc-map {
-      height: 460px !important;
+      height: 415px !important;
     }
     .gc-chart {
       width: 100% !important;
@@ -222,6 +222,7 @@
                     :gc-maturity-data="$root.maturityData"
                     :gc-selected-date="$root.queryDate"
                     gc-available-options=""
+                    :gc-language="$root.language"
                     gc-mode="line"
                     :gc-white-label="true"
                   />
@@ -254,7 +255,7 @@
                 </ul>
             </div> -->
 
-            <p class="menu-label" id="menuUtilities">
+            <p class="menu-label" id="menuUtilities" style="margin-top: -4em;">
               Utilities
             </p>
 
