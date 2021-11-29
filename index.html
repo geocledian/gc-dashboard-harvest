@@ -225,6 +225,7 @@
                     :gc-language="$root.language"
                     gc-mode="line"
                     :gc-white-label="true"
+                    :gc-zoom-domain="$root.zoomDomain"
                   />
                 </div>
               </div>
@@ -354,7 +355,7 @@
   function activateSplitView() {
     vmRoot.leftColumnShow = true;
     vmRoot.rightColumnShow = true;
-    vmRoot.containerSplitSize = [62,38];
+    vmRoot.containerSplitSize = [42,58];
   }
   function leftColumnFull() {
     // catch wrong resize of chart lib of 100% width is reached

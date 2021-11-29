@@ -163,7 +163,8 @@ function initComponent() {
         rightColumnShow: true,
         split: null,
         phStartdate: '',
-        phEnddate: ''
+        phEnddate: '',
+        zoomDomain: []
       },
       i18n: i18n,
       created() {
@@ -211,6 +212,7 @@ function initComponent() {
         this.$on('resetPhenology', this.resetPhenology);
         this.$on('getMaturityTimeseries', this.getMaturityTimeseries);
         this.$on('maturitydataChange', this.maturitydataChange);
+        this.$on('zoomDomainChange', this.zoomDomainChange);
 
         this.containerSplitSize = [42,58];
 
@@ -354,6 +356,9 @@ function initComponent() {
         },
         chartModeChange: function (value) {
           this.chartMode = value;
+        },
+        zoomDomainChange: function (value) {
+          this.zoomDomain = value;
         },
         getPhenology: function () {
           for (let i=0; i < this.$children.length; i++ ) {
