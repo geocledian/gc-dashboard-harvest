@@ -491,7 +491,7 @@ function initComponent() {
           document.getElementById("navbarDataValidation").href += "?" + queryParams;
           document.getElementById("navbarPortfolio").href += "?" + queryParams;
           document.getElementById("navbarZones").href += "?" + queryParams;
-          document.getElementById("navbarHarvest").href += "?" + queryParams;
+          document.getElementById("navbarAnalyst").href += "?" + queryParams;
 
         }
       }
